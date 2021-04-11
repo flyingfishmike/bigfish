@@ -24,5 +24,6 @@ public class CollectionTest02 {
         System.out.println(System.identityHashCode(a));
         // anpai
         // sss
+        System.out.println("2");
     }
 }
