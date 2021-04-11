@@ -15,10 +15,22 @@ public class CollectionTest03 {
         //System.out.println(c.contains(u2));// false
         // 重写之后结果是true
         System.out.println(c.contains(u2));// true
+        c.remove(u2);
+        System.out.println(c.size());//结果是0，因为重写了equals方法
         Integer x = new Integer(1000);
         c.add(x);
         Integer y = new Integer(1000);
         System.out.println(c.contains(y));// ture
+
+        // 创建集合对象
+        Collection cc = new ArrayList();
+        // 创建数组对象
+        String s1= new String("hello");
+        String s2= new String("hello");
+        // 删除s2
+        cc.remove(s2);
+        //集合中的个数是
+        System.out.println(cc.size());//0个
     }
 }
 class User{
