@@ -22,5 +22,6 @@ public class CollectionTest02 {
         String a= "asa";
         System.out.println(a.hashCode());
         System.out.println(System.identityHashCode(a));
+        // anpai
     }
 }
