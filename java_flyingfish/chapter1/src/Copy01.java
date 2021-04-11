@@ -5,6 +5,7 @@ import java.io.IOException;
 
 public class Copy01 {
     public static void main(String[] args) {
+        // 使用FileOutputStream和FileInputStream拷贝文件
         FileOutputStream fos = null;
         FileInputStream fis = null;
         try {
