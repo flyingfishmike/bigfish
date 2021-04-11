@@ -11,7 +11,14 @@ public class CollectionTest03 {
         User u2 = new User("jack");
         // 加入集合
         c.add(u1);
-        System.out.println(c.contains(u2));
+        // 重写之前equals比较的结果是false
+        //System.out.println(c.contains(u2));// false
+        // 重写之后结果是true
+        System.out.println(c.contains(u2));// true
+        Integer x = new Integer(1000);
+        c.add(x);
+        Integer y = new Integer(1000);
+        System.out.println(c.contains(y));// ture
     }
 }
 class User{
