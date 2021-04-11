@@ -6,7 +6,7 @@ public class FileInputStreamTest02 {
     public static void main(String[] args) {
         FileInputStream fis = null;
         try {
-            fis = new FileInputStream("chapter1\\src\\word.txt");
+            fis = new FileInputStream("chapter1\\src\\new.txt");
             byte[] byt = new byte[10];
             int readCount;
 /*          System.out.println(readCount = fis.read(byt));

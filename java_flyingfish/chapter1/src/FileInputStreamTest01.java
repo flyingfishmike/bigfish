@@ -8,7 +8,7 @@ public class FileInputStreamTest01 {
             fis = new FileInputStream("chapter1\\src\\word.txt");
             int readData;
             // 第一种方法
-/*            while (true){
+            /* while (true){
                 readData = fis.read();
                 if(readData == -1){
                     break;
