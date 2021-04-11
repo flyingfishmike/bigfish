@@ -9,7 +9,7 @@ public class Copy01 {
         FileInputStream fis = null;
         try {
             fis = new FileInputStream("chapter1\\src\\QQ音乐.txt");
-            fos = new FileOutputStream("D:\\ceshi\\1.txt");
+            fos = new FileOutputStream("chapter1\\src\\QQ音乐备份.txt");
             byte[] byt = new byte[1024*1024];
             int readCount;
             // 核心代码

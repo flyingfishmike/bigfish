@@ -12,7 +12,7 @@ public class Copy02 {
         FileWriter fwri = null;
         try {
             frea = new FileReader("chapter1/src/QQ音乐.txt");
-            fwri = new FileWriter("QQ音乐2.txt");
+            fwri = new FileWriter("chapter1/src/QQ音乐备份2.txt");
             char[] chas = new char[1024 * 500];
             int ReadCount = 0;
             while ((ReadCount = frea.read(chas)) != -1){
