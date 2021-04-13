@@ -8,9 +8,9 @@ public class Test01 {
         heimao.run();
         // heimao.CatchMouse方法用不了
         System.out.println("======");
-        Animal b = new Cat();
+        Animal b = new Cat();// 向上转型，自动类型转换
         if (b instanceof Cat){ // b这个引用指向的对象是一个Cat类型； b是一个名为Cat类的实例
-            Cat baimao = (Cat)b;// 从右到左变小，是向下转型，强制类型转换（Animal-->Cat）
+            Cat baimao = (Cat)b;// 从右到左变小,父类到子类，是向下转型，强制类型转换（Animal-->Cat）
             baimao.CatchMouse();
         }else if(b instanceof Fish){
             Fish yu = (Fish)b;
