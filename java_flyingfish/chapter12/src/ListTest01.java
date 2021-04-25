@@ -22,6 +22,8 @@ public class ListTest01 {
         myList.add("B");
         myList.add("C");
         myList.add("D");
+        myList.add("E");
+        myList.add("B");
         // 在列表指定位置添加元素，index是下标
         myList.add(3,"morning");
 
@@ -42,5 +44,23 @@ public class ListTest01 {
             Object o = myList.get(j);
             System.out.println(o);
         }
+        // 获取对象第一次出现处的索引
+        System.out.println(myList.indexOf("C"));// 2
+        //对象最后一次出现的索引
+        System.out.println(myList.lastIndexOf("B"));//5
+        //删除指定下标的元素
+        //删除下标为0的元素
+        myList.remove(0);
+        System.out.println(myList.size());//6
+
+        //修改指定位置的元素，修改元素的下标
+        myList.set(3,"A");
+        System.out.println("====");
+        //遍历集合
+        for(int ii = 0;ii < myList.size();ii++){
+            Object ob = myList.get(ii);
+            System.out.println(ob);
+        };
+
     }
 }
